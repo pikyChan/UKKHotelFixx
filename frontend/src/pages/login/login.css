@@ -1,0 +1,59 @@
+p {
+  font-size: 14px;
+  color: #000; /* Ensure the text is visible */
+}
+
+a {
+  color: #0071c2; /* Link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.login-mdb {
+  overflow-y: auto;
+}
+
+.card-mdb {
+  border-radius: 1rem;
+}
+
+.img-mdb {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.fa-cubes {
+  color: #ff6219;
+}
+
+.headersign {
+  letter-spacing: 1px;
+}
+
+.lContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lInput {
+  height: 30px;
+  padding: 10px;
+}
+
+.lButton {
+  border: none;
+  padding: 10px 20px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.lButton:disabled {
+  background-color: #0071c28c;
+  cursor: not-allowed;
+}

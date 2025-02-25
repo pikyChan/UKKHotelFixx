@@ -1,0 +1,185 @@
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(103, 71, 54, 0.4)),
+    url("./image/heroimage-1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 75vh;
+  margin-bottom: 5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.headerContainer {
+  width: 100%;
+  padding: 0 5%;
+}
+
+
+
+.headerCont {
+  color: white;
+  /* Konten rata kiri */
+  max-width: 800px; /* 🔹 Lebar lebih besar */
+}
+
+.headerTitle {
+  font-size: 60px; /* 🔹 Ukuran lebih besar */
+  line-height: 1.2;
+  max-width: 800px; /* 🔹 Batasi lebar agar tidak terlalu lebar */
+  margin: 0 auto; 
+}
+
+.headerDesc {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.button-cont {
+  margin-top: 10px;
+}
+
+.headerBtn {
+  background-color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+}
+
+.headerSearch {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 4rem;
+  box-shadow: 0px 0px 10px rgba(185, 185, 185, 1);
+  position: absolute;
+  bottom: -30px;
+  left: 5%;
+  width: 80%;
+  max-width: 600px;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  flex: 1;
+}
+
+.headerIcon {
+  color: lightgray;
+  font-size: 20px;
+}
+
+.headerBtn2 {
+  background-color: rgba(103, 71, 54);
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:disabled {
+    background-color: rgba(103, 71, 54, 0.7);
+    cursor: not-allowed;
+  }
+}
+
+/* 🔹 Mode List */
+.header.listMode {
+  height: 35vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 71, 54)),
+    url("https://images.pexels.com/photos/1001965/pexels-photo-1001965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem;
+}
+
+/* 🔹 Responsive */
+
+/* ✅ Tablet */
+@media (max-width: 991px) {
+  .header {
+    height: 60vh;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .headerTitle {
+    font-size: 45px;
+  }
+
+  .headerDesc {
+    font-size: 16px;
+  }
+
+  .headerSearch {
+    flex-direction: column;
+    padding: 10px;
+    position: static;
+    margin-top: 2rem;
+    left: auto;
+  }
+
+  .headerSearchItem {
+    width: 100%;
+  }
+
+  .headerBtn2 {
+    width: 100%;
+  }
+}
+
+/* ✅ Mobile */
+@media (max-width: 576px) {
+  .header {
+    height: 50vh;
+    margin-bottom: 3rem;
+  }
+
+  .headerTitle {
+    font-size: 35px;
+  }
+
+  .headerDesc {
+    display: none;
+  }
+
+  .headerSearch {
+    width: 90%;
+    left: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    height: 45vh;
+  }
+
+  .headerTitle {
+    font-size: 28px;
+  }
+}
